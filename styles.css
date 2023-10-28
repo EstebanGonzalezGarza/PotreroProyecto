@@ -1,0 +1,127 @@
+/* Estilos generales */
+
+/* Centrar las imágenes horizontalmente dentro del carrusel */
+.carousel-inner .carousel-item img {
+    display: block;
+    margin: 0 auto;
+    /* Esto centrará horizontalmente la imagen dentro de su contenedor */
+}
+
+/* Ajustar el z-index para los botones de control */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 100;
+    /* Puedes ajustar este valor según sea necesario */
+}
+
+/* Efecto de hover en los enlaces */
+a:hover {
+    transform: scale(1.9);
+    transition: transform 0.4s;
+    color: #ff0000;
+    text-decoration: underline;
+    /* Puedes agregar otros estilos según tu preferencia */
+}
+
+h1 {
+    color: #270756;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Estilo para el texto blanco o casi blanco */
+body,
+h2,
+li,
+p {
+    color: #141111;
+    /* Cambia el color a blanco */
+}
+
+/* Estilo para campos de entrada */
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el botón del formulario */
+button[type="submit"] {
+    background-color: #0da5dc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para el footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el párrafo dentro del footer */
+footer p {
+    margin-bottom: 15px;
+}
+
+/* Estilos para las imágenes de redes sociales */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales a {
+    margin: 10px;
+    display: block;
+    text-align: center;
+}
+
+.redes-sociales img {
+    max-width: 50px;
+    height: auto;
+}
+
+/* Estilos específicos para pantallas pequeñas (menos de 576px) */
+@media (max-width: 576px) {
+
+    /* Modifica el estilo de los elementos para pantallas pequeñas */
+    .mobile-only {
+        display: block;
+    }
+}
+
+/* Estilos específicos para pantallas grandes (más de 993px) */
+@media (min-width: 993px) {
+
+    /* Modifica el estilo de los elementos para computadoras de escritorio */
+    .desktop-hidden {
+        display: none;
+    }
+}
+
+/* Estilos específicos para el modo de alto contraste */
+body.alto-contraste {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b3ab15;
+    padding: 40px;
+}
